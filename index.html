@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/css/index.css">
+</head>
+<body>
+
+    <button id="oop">adfs</button>
+
+</body>
+<script src="static/js/jquery.js"></script>
+<script>
+    $('#oop').on('click',function () {
+        $.get('getList',function (r) {
+            if(r){
+                console.log(r);
+            }
+        })
+    })
+</script>
+</html>
