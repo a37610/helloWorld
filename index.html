@@ -13,7 +13,7 @@
 <script src="static/js/jquery.js"></script>
 <script>
     $('#oop').on('click',function () {
-        $.get('getList',function (r) {
+        $.get('getList',{id: 123},function (r) {
             if(r){
                 console.log(r);
             }

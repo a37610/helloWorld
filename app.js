@@ -62,8 +62,10 @@ var handleRequest = function (req, res) {
             }
             res.end(data)
         })
-    }else if(url === '/getList:key'){
+    }else if(url.startsWith('/getList')){
+        //}else if(url === '/getList'){
         //res.end(JSON.stringify(getList()));
+
         res.end(JSON.stringify(dataList));
 
     }else if(url === '/favicon.ico'){
